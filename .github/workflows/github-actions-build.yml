@@ -8,9 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+      with:
+        submodules: recursive
     - uses: jakejarvis/hugo-build-action@master
       with:
-        args: --minify --buildDrafts
+        args: --minify
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
