@@ -1,7 +1,7 @@
 on: 
   push:
     branches:
-      - "master"
+      - "default"
 name: 🚀 Deploy website on push
 jobs:
   build:
