@@ -1,6 +1,7 @@
-Redirect 301 /.well-known/webfinger?resource=acct%3Aphill93%40phill93.de /.well-known/webfinger/index.json
+RewriteEngine on
+RewriteRule ^.well-known/webfinger(.*)$ https://troet.cafe/.well-known/webfinger?resource=acct:phill93@troet.cafe [L,R=301]
 
-<Files ".ftp-deploy-sync-state.json">  
+<Files ".ftp-deploy-sync-state.json">
   Order Allow,Deny
   Deny from all
 </Files>
