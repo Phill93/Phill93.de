@@ -1,1 +1,6 @@
-Redirect 301 /.well-known/webfinger?resource=acct%3Aphill93%40phill93.de /.well-known/webfinger
+Redirect 301 /.well-known/webfinger?resource=acct%3Aphill93%40phill93.de /.well-known/webfinger/index.json
+
+<Files ".ftp-deploy-sync-state.json">  
+  Order Allow,Deny
+  Deny from all
+</Files>
