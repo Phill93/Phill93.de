@@ -28,3 +28,5 @@ module:
   mounts:
     - source: .well-known
       target: static/.well-known
+    - source: files
+      target: static
