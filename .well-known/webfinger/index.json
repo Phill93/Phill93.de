@@ -1,0 +1,24 @@
+{
+    "subject": "acct:phill93@troet.cafe",
+    "aliases": [
+        "https://troet.cafe/@phill93",
+        "https://troet.cafe/users/phill93",
+        "phill93@troet.cafe"
+    ],
+    "links": [
+        {
+            "rel": "http://webfinger.net/rel/profile-page",
+            "type": "text/html",
+            "href": "https://troet.cafe/@phill93"
+        },
+        {
+            "rel": "self",
+            "type": "application/activity+json",
+            "href": "https://troet.cafe/users/phill93"
+        },
+        {
+            "rel": "http://ostatus.org/schema/1.0/subscribe",
+            "template": "https://troet.cafe/authorize_interaction?uri={uri}"
+        }
+    ]
+}

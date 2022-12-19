@@ -15,12 +15,16 @@ params:
         imageTitle: "This is my icon"
         imageWidth: 120
         imageHeight: 120
-        buttons:
-            - name: Services
-              url: "https://phill93.net"
 
     socialIcons:
         - name: "github"
           url: "https://github.com/Phill93"
         - name: "pgpkey"
           url: "https://phill93.de/gpg.pub.asc"
+        - name: "mastodon"
+          url: "phill93@phill93.de"
+
+module:
+  mounts:
+    - source: .well-known
+      target: static/.well-known
